@@ -1,22 +1,42 @@
 // Math resources data with descriptions
 const resources = {
     books: [
-        { title: "The Art of Problem Solving", link: "https://artofproblemsolving.com/books", description: "A series of books designed for competitive math students." },
-        { title: "Concrete Mathematics", link: "https://www.goodreads.com/book/show/112243.Concrete_Mathematics", description: "A deep dive into fundamental mathematics used in computer science." },
-        { title: "How to Solve It", link: "https://www.goodreads.com/book/show/391366.How_to_Solve_It", description: "A classic guide on problem-solving techniques in mathematics." }
+        { title: "The Art of Problem Solving", link: "https://artofproblemsolving.com/wiki/index.php/Olympiad_books", description: "A series of books designed for competitive math students." },
+        { title: "The Art of Problem Solving (Paid)", link: "https://artofproblemsolving.com/wiki/index.php/Mathematics_books#General_Introduction_.2F_Multiple_Topics", description: "A series of books designed for competitive math students.(mostly paid, but you can use it as reference)" },
+        { title: "МЦНМО", link: "https://old.mccme.ru/free-books/", description: "На этой странице размещены материалы (полные тексты) свободно распространяемых книг." },
+        { name: "libgen", link: "https://libgen.is", description: "Free books" },
+        //{ name: "", link: "", description: "" },
+        { title: "How to Solve It", link: "https://math.hawaii.edu/home/pdf/putnam/PolyaHowToSolveIt.pdf", description: "A classic guide on problem-solving techniques in mathematics." }
     ],
     websites: [
         { name: "Khan Academy", link: "https://www.khanacademy.org/math", description: "Free online courses covering a wide range of math topics." },
         { name: "Art of Problem Solving", link: "https://artofproblemsolving.com/", description: "An advanced platform for math enthusiasts and Olympiad students." },
-        { name: "Brilliant", link: "https://brilliant.org/", description: "Interactive learning for math, science, and programming." }
+        { name: "Olimpiada ru", link: "https://olimpiada.ru/", description: "Российский сайт по олимпиадам." },
+        { name: "Сириус курсы", link: "https://edu.sirius.online/#/", description: "Продвинутые курсы для школьников, учителей и всех желающих." },
+        { name: "Brilliant", link: "https://brilliant.org/", description: "Interactive learning for math, science, and programming." },
+        { name: "Geogebra", link: "https://www.geogebra.org", description: "Free tool for making geometric diagrams." },
+        { name: "Wolframalppha", link: "https://www.wolframalpha.com/", description: "Solves various math problems." },
+        { name: "Desmos", link: "https://www.desmos.com/calculator", description: "Graphing calculator." },
+        { name: "Symbolab", link: "https://www.symbolab.com", description: "Multifunctional calculator." },
+        //{ name: "", link: "", description: "" },
+        { name: "Math is fun", link: "https://www.mathsisfun.com/", description: "Math in a fun entertaing way." }
     ],
     youtube: [
-        { name: "3Blue1Brown", link: "https://www.youtube.com/c/3blue1brown", description: "Visual explanations of deep mathematical concepts." },
-        { name: "Numberphile", link: "https://www.youtube.com/c/numberphile", description: "Fun and fascinating videos on numbers and mathematical concepts." },
-        { name: "Mathologer", link: "https://www.youtube.com/c/Mathologer", description: "Deep dives into interesting math problems and theories." }
+        { name: "3Blue1Brown", link: "https://www.youtube.com/@3blue1brown", description: "Visual explanations of deep mathematical concepts." },
+        { name: "Numberphile", link: "https://www.youtube.com/@numberphile", description: "Videos about numbers and mathematics." },
+        { name: "Mathologer", link: "https://www.youtube.com/@Mathologer", description: "Enter the world of the Mathologer for really accessible explanations of hard and beautiful math(s). " },
+        { name: "Борис Трушин", link: "https://www.youtube.com/@trushinbv", description: "Сложные темы простым языком." },
+        { name: "Vital Math", link: "https://www.youtube.com/@VitalMath", description: "Канал о гармонии, порядке и красоте." },
+        { name: "Mathin", link: "https://www.youtube.com/@Mathin2049", description: "Канал с новым подходом к обучению математики" },
+        { name: "Math The World", link: "https://www.youtube.com/@MathTheWorld", description: "A math project dedicated to bringing real life context to math! " },
+        { name: "Математический Мирок", link: "https://www.youtube.com/@FrolovSergei", description: "решения математических задачек, выводы формул и доказательства математических утверждений." },
+        { name: "Tutor Online", link: "https://www.youtube.com/@TutorOnline_ru", description: "Школьная математика" },
+        //{ name: "", link: "https://www.youtube.com/@", description: "" },
+        { name: "Маткульт-привет!", link: "https://www.youtube.com/@Маткульт-приветАлексейСавватее", description: "Лекции доктора математических наук Алексея Савватеева" }
     ],
     other: [
         { name: "Project Euler", link: "https://projecteuler.net/", description: "A collection of challenging math and programming problems." },
+        //{ name: "", link: "", description: "" },
         { name: "MIT OpenCourseWare - Math", link: "https://ocw.mit.edu/courses/mathematics/", description: "Free university-level math courses from MIT." }
     ]
 };
@@ -62,6 +82,8 @@ document.addEventListener("DOMContentLoaded", () => {
     displayResources();
     document.getElementById("search").addEventListener("input", filterResources);
 });
+
+/*
 resources.books.push({
     title: "New Math Book",
     link: "https://example.com",
@@ -82,3 +104,4 @@ resources.other.push({
     link: "https://example.com",
     description: "An amazing something that covers advanced calculus."
 });
+*/
